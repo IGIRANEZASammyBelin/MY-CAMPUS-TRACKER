@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MY Campus Tracker</title>
+        <link rel="stylesheet" href="styles/main.css">
+
+
+    </head>
+    <body>
+        <a class="slip-link" href="#main">skip to content</a>
+        <header>
+            <h1>My Campus Tracker</h1>
+            <nav aria-label="Main navigation">
+                <button data-page="about" aria-current="page">About</button>
+                <button data-page="dashboard">Dashboard</button>
+                <button data-page="records">Schedule</button>
+                <button data-page="form">Add Activity </button>
+                <button data-page="settings">Settings</button>
+                <button data-page="data">Saved Activities</button>
+
+            </nav>
+
+        </header>
+        <main id="main">
+            <section id="page" data-page="about">
+                <h2 tabindex="-1">welcome To My Campus Tracker</h2>
+                <div class="card">
+                    <p>Keep your Day Organized</p>
+                    <h3>contact</h3>
+                    <p>Email:sammybelinplamer@gmail.com</p>
+
+                </div>
+
+            </section>
+            <section id="page-dashboard" class="page" data-page="dashboard" hidden>
+                <h2 tabindex="-1">Dashboard</h2>
+                <form id="record-form" novalidate>
+                    <div class="filed">
+                        <label for="title">Activity title</label>
+                        <input id="title" aria-describedby="title-error" required>
+                        <p id="title-error" class="error" role="statis"></p>
+
+                    </div>
+                    <div class="field">
+                        <label for="duration">Duration(use the unit selected)</label>
+                        <input id="duration" inputmode="decimal"
+                          aria-describedby="duaration-error" required>
+                        <p id="duration-error" class="error" role="satus"></p>
+
+                    </div>
+                    <div class="field">
+                        <label for="duration">Duration(use selcted Unit)</label>
+                        <input id="duration-error" inputmode="decimal"
+                           aria-describedby="duration-error" required>
+                        <p id="duration-error" class="error" role="status"></p>
+
+                    </div>
+                    <div class="field">
+                        <label for="tag">Category</label>
+                        <input id="tag" list="tag-list" aria-describedby="tag-error" required>
+                        <datalist id="tag"></datalist>
+                        <p id="tag-error" class="error" role="status"></p>
+                        
+                    </div>
+                    <button type="submit">save</button>
+                    <button type="button" id="cancel-button" class="secondary">Cancel</button>
+
+                </form>
+            </section>
+            <section id="page-form" class="page" data-page="form" hidden>
+               <h2 id="form-heading" tabindex="-1">Add an activity</h2>
+               <form id="record-form" novalidate>
+                <div class="field">
+                    <label for="title">activity title</label>
+                    <input id="title" aria-describedby="title-error" required>
+                    <p id="title error" class="error" role="status"></p>
+
+                </div>
+                <div class="field">
+                  <label for="dueDate">Duration(use the unit selected)</label>
+                  <input id="tag" list="tag-list" aria-describedby="tag-error" required>
+                  <datalist id="tag-error"></datalist>
+                  <p id="tag-error" class="error" role="status"></p>
+
+                </div>
+                <button type="submit">Save</button>
+                <button type="button" id="cancel-button" class="secondary">cancel</button>
+
+             </form>
+            </section>
+            <section id="page-settings"class="page" data-page="settings" hidden>
+                <h2 tabindex="-1">settings</h2>
+                <form id="settings-form" novalidate>
+                    <fieldset>
+                        <legend>Time unit</legend>
+                        <div class="field">
+                            <input id="unit-minutes" type="radio" name="unit" checked>
+                            <label for="unit-minutes">Minutes</label>
+                            
+                        </div>
+                        <div class="field">
+                            <input id="unit-hours" type="radio" name="unit">
+                            <label for="unit-hours">Hours</label>
+
+                        </div>
+                    </fieldset>
+                    <div class="field">
+                        <label for="cap">planned Time Limit (in the selcted unit)</label>
+                        <input id="cap" inputmode="decimal" aria-describedby="cap-error" required>
+                        <p id="tags-error" class="error" role="status"></p>
+
+                    </div>
+                    <button type="submit">Save settings</button>
+
+
+                </form>
+            </section>
+            <section id="page-data" class="page" data-page="data" hidden>
+                <h2 tabindex="-1">Import and export</h2>
+                <div class="card">
+                    <button type="button" id="export-button">ExportJSON</button>
+                    <label for="import-file">IMPORT JSON(replaces current activities)</label>
+                    <input id="import-file" type="file" accpets=".json">
+                    <button type="button" id="reset-button" class="danger">Restore Sample Activities</button>
+                    <p id="data-status" role="status"></p>
+
+                </div>
+            </section>
+        </main>
+        <footer><P> My Campus Tracker Given to you By Sammy</P></footer>
+        <script src="scripts/state.js"></script>
+        <script src="scripts/validators.js"></script>
+        <script src="scripts/search.js"></script>
+        <script src="scripts/storage.js"></script>
+        <script src="scripts/ui.js"></script>
+        <script src="scripts/main.js"></script>
+    </body>   
+</html>

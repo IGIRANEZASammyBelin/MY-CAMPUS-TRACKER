@@ -1,0 +1,116 @@
+[
+    {
+        "id": "rec_1",
+        "title":"Software Engineering Course ",
+        "dueDate": 90,
+        "tag": "courses",
+        "createdAt": "2026-10-1T09:00:00",
+        "updatedAt": "2026-10-01T09:00:00",
+    },
+    {
+        "id": "rec_2",
+        "title": "Campus Assembly",
+        "dueDate": "2026-12-31",
+        "duration": 60,
+        "tag": "Campus Activity",
+        "createdAt": "2026-10-01T09:00:00",
+        "updatedAt": "2026-10-01T09:00:00",
+    
+    },
+    {
+        "id": "rec_3",
+        "title": "Public Speaking and Debate Club",
+        "dueDate": "2026-02-28",
+        "duration": 120,
+        "tag": "Clubs",
+        "createdAt": "2026-10-01T09:00:00)",
+        "updatedAt": "2026-10-01T09:00:00)"
+    },
+    {
+        "id": "rec_4",
+        "title": "Young Programmers Club",
+        "dueDate": "2026-10-14",
+        "duration": 30,
+        "tag": "Clubs",
+        "createdAt": "2026-10-01T09:00:00",
+        "updatedAt": "2026-10-01T09:00:00"
+
+    },
+    {
+        "id": "rec_5",
+        "title": "Traders Market Analysis Club",
+        "dueDate": "2026-11-11",
+        "duration": 45,
+        "tag": "Clubs",
+        "CreatedAt": "2026-10-01T09:00:00",
+        "updateAt": "2026-10-01T09:00:00"
+    }
+    {
+        "id": "rec_6",
+        "title": "Agrican History Forum",
+        "dueDate": "2026-11-15",
+        "duration": 45,
+        "tag": "Programs and Events",
+        "createdAt": "2026-10-01T09:00:00",
+        "updatedAt": "2026-10-01T09:00:00"
+
+    },
+    {
+        "id": "rec_7",
+        "title": "Over Atlantic Experience",
+        "dueDate": "2026-07-01",
+        "duration": 20160,
+        "tag": "Programs and Events",
+        "createdAt": "2026-10-01T09:00:00",
+        "updateAt": "2026-10-01T09:00:00)"
+
+    }
+    
+    {
+        "id": "rec_8",
+        "title": "Halloween Celebrations",
+        "dueDate": "2026-10-31",
+        "Duration": 180,
+        "tag": "Programs and Events",
+        "createdAt": "2026-10-01T09:00:00",
+        "updateAt": "2026-10-01T09:00:00"
+
+    },
+
+    {
+        "id": "rec_9",
+        "title": "Pop the ballon",
+        "dueDate": "2027-02-14",
+        "duration": 150,
+        "tag": "Programs and Events",
+        "createdAt": "2026-10-01T09:00:00",
+        "updatedAt": "2026-10-01T09:00:00"
+
+    },
+    {
+        "id": "rec_10",
+        "title": "Basketball Match Finals",
+        "dueDate": "2027-01-01",
+        "duration": 220,
+        "tag": "sports",
+        "createdAt": "2026-10-01T09:00:00",
+        "updatedAt": "2026-10-01T09:00:00",
+
+    }
+    {
+        "id": "rec_11",
+        "title": "Gym Time",
+        "dueDate": "202-04_06",
+        "duration": 90,
+        "tag": "Gym Time",
+        "createAt": "2026-10-01T09:00:00",
+        "updatedAt": "2026-10-01T09:00:00"
+    }
+    
+
+
+
+
+
+
+]

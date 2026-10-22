@@ -1,0 +1,116 @@
+:root {
+    --blue: midnightblue;
+    --teal: teal;
+    --amber: orange;
+    --red: firebrick;
+    --bg: whitesmoke;
+    --card: white;
+    --text: black;
+    --radius: 8px;
+
+}
+* { box-sizing: border-box; }
+[hidden] { display:none !important; }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height:1.5;
+}
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 16px;
+}
+header,
+footer {
+    background: var(--blue);
+    color:white;
+    padding: 14px 16px;
+}
+ footer { text-align: center; }
+ h1 { font-size: 1.6rem; }
+ .skip-link { 
+    position: absolute;
+    left: -9999px;
+    background: white;
+    color: midnightblue;
+    padding: 10px;
+ }
+ .skip-link:focus {
+    left: 10px;
+    top: 10px;
+    z-index: 10;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap: wrap;
+    gap; 8px;
+    margin-top: 8px;
+
+}
+button,
+input,
+select{
+    font:inherit;
+    border-radius: : var(--radius);
+}
+button {
+    background: var(--teal);
+    color: white;
+    border: 1px solid transparent;
+    padding: 8px 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+}
+button:hover { background: darkslategray; }
+nav button {
+    background: transparent;
+    color: white;
+    broder: 2px solid white;
+}
+nav button:hover,
+nav button[aria-current="page"] {font-weigt: bold; }
+button.secondary {
+    background: white;
+    color: var(--blue);
+    border: 1px solid var(--blue);
+}
+button.secondary:hover {background: whitesmoke; }
+button.danger { background: var(--red); }
+button.danger:hover { background: darkred; }
+input ,
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid gray;
+    background: white;
+    color: black;
+}
+.skip-link:focus {left: 10px; top: 10px; z-index: 10; }
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+
+}
+button, input, select { font: inherit; border-radius: var(--radius); }
+nav button { border: 2px solid white; }
+nav button:hover, nav button [aria-current="page"]{
+    background: white;
+    color: var(--blue);
+}
+nav button[aria-current="page"] { font-weight: bold; }
+input, select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid gray;
+    background; white;
+    color: black;
+}
+input[type="checkbox"], input[type="radio"] { width: auto; }
+input[aria-invalid="true"] { border: 2px solid var(--red); }
+.field, fieldset { margin-bottom; 14px; }

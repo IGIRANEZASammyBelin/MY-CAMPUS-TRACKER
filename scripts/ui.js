@@ -120,7 +120,7 @@ CLP.startAdd = () => {
 };
 CLP.renderSettings = () => {
     
-    const settongs = CLP.state.settings;
+    const settings = CLP.state.settings;
     
     CLP.$("unit-minutes").checked = settings.unit === "minutes";
     CLP.$("unit-hours").checked = settings.unit === "hours";
