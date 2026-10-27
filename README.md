@@ -56,6 +56,5 @@ DEMO VIDEO
 https://www.youtube.com/watch?v=7o_JkgHwcTo
 
 WEB LINK
-file:///C:/Users/TULIP%20Group/OneDrive/Documents/MY-CAMPUS-TRACKER/index.html
-
+https://igiranezasammybelin.github.io/MY-CAMPUS-TRACKER/#main
 
